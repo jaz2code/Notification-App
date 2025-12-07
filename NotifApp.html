@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+    <link rel= "stylesheet" href= "NotifStyle.css" >
+    <title>
+        Notifications App
+    </title>
+</head>
+
+<body>
+    <div class = "container">
+        
+
+
+        
+        <div id = 'content' class = 'content'>
+        </div>
+
+        <button id= 'open-button'>
+            Add Reminder
+        </button>
+
+        <dialog id = 'add-reminder' >
+            <form>
+                <label for = title>
+                    Title: 
+                </label><br>
+                <input type='text' id = 'title' name="title"> <br>
+
+                <label for = date>
+                    Date: 
+                </label><br>
+                <input type='date' id = 'date' name="date"> <br>
+
+                <label for = time>
+                    Time: 
+                </label><br>
+                <input type='time' id = 'time' name="time"> <br>
+
+                <label for = description>
+                    Description: 
+                </label><br>
+                <input type='textarea' id = 'description' name="description"> <br>
+
+                <button type= 'submit'>Add Reminder</button>
+
+            </form>
+            <button id = 'close-button'>
+                Close Modal
+            </button>
+        </dialog>
+
+        <div id = 'reminder-menu' style = 'display: none;'>
+            <button id = 'edit-reminder'> Edit </button>
+            <button id = 'delete-reminder'> Delete </button>
+        </div>
+
+
+    <script src = "NotifScript.js"></script>
+</body>
